@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Дни до дня рождения</h1>
-    <input id="dateBirthday" type="date"/>
-    <button id="getDaysBtn" onclick="calculateDays()">Посчитать</button>
-    <p class="error text-danger" id="errorMassege">
-        Ошибка, введите дату!
-      </p>
-      <p class="result"></p>
-      <script src="./bairthdaydate.js"></script>
+
+    <div id="headerwrapper">
+        <h1>Дни до дня рождения</h1>
+    </div>
+
+    <div id="inputwrapper">
+        <input id="dateBirthday" type="date" />
+        <button id="getDaysBtn" onclick="calculateDays()">Посчитать</button>
+    </div>
+
+    <div id="errorwrapper">
+        <p class="error text-danger" id="errorMassege">
+          Введите дату!
+        </p>
+        <p class="result"></p>
+    </div>
+
+    <script src="./bairthdaydate.js"></script>
 </body>
+
 </html>
 
 
